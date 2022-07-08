@@ -6,3 +6,9 @@
       register: whoami
 
     - debug: msg={{ whoami }}
+
+- hosts: anhpnv
+  tasks:
+  - name: Install Nginx
+    apt:
+      name: nginx
