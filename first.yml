@@ -12,3 +12,8 @@
   - name: Install Nginx
     apt:
       name: nginx
+  - name: Add index.html
+    become: true
+    copy:
+      src: index.html
+      dest: /var/www/html
